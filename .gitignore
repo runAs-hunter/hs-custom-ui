@@ -129,6 +129,7 @@ node_modules
 # HubSpot specific
 .hsdev
 .hsdev-cache
+hubspot.config.yml
 
 # IDE files
 .vscode/

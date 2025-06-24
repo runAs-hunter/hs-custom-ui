@@ -1,0 +1,13 @@
+defaultPortal: your-portal-name
+portals:
+  - name: your-portal-name
+    portalId: YOUR_PORTAL_ID
+    env: prod
+    authType: personalaccesskey
+    auth:
+      tokenInfo:
+        accessToken: YOUR_ACCESS_TOKEN
+        expiresAt: '2025-01-01T00:00:00.000Z'
+    accountType: STANDARD
+    personalAccessKey: YOUR_PERSONAL_ACCESS_KEY
+    parentAccountId: YOUR_PARENT_ACCOUNT_ID 
