@@ -1,0 +1,13 @@
+{
+  "type": "crm-card",
+  "data": {
+    "title": "Contact Visit Log",
+    "description": "Tracks user views on contact records",
+    "uid": "contact_view_log_card",
+    "location": "crm.record.tab",
+    "module": {
+      "file": "contact-view-log.jsx"
+    },
+    "objectTypes": [{ "name": "contacts" }]
+  }
+} 

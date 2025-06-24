@@ -1,0 +1,31 @@
+{
+  "name": "Record Audit Tracker",
+  "description": "Tracks user views on any given record",
+  "uid": "record_audit_tracker",
+  "scopes": ["crm.objects.contacts.read", "crm.objects.contacts.write", "settings.users.read"],
+  "public": false,
+  "functions": [
+    {
+      "name": "capture-visit",
+      "path": "app.functions/capture-visit.js",
+      "auth": "SECRET"
+    },
+    {
+      "name": "get-visits",
+      "path": "app.functions/get-visits.js",
+      "auth": "SECRET"
+    }
+  ], 
+  "extensions": {
+    "crm": {
+      "cards": [
+        {
+          "file": "extensions/contact-view-log-card.json"
+        }
+      ]
+    }
+  },
+  "webhooks": {
+    "file": "webhooks/webhooks.json"
+  }
+}

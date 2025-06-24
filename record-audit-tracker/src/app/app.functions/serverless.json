@@ -1,0 +1,16 @@
+{
+  "appFunctions": {
+    "myFunc": {
+      "file": "example-function.js",
+      "secrets": []
+    },
+    "capture-visit": {
+      "file": "capture-visit.js",
+      "secrets": []
+    },
+    "get-visits": {
+      "file": "get-visits.js",
+      "secrets": []
+    }
+  }
+}
