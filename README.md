@@ -17,21 +17,41 @@ A sample project demonstrating HubSpot custom UI development.
    npm install -g @hubspot/cli
    ```
 
-2. Authenticate with your HubSpot account:
+2. Set up your HubSpot configuration:
+   ```bash
+   # Copy the example configuration file
+   cp hubspot.config.yml.example hubspot.config.yml
+   
+   # Edit the file with your HubSpot credentials
+   # You'll need to get these from your HubSpot developer account
+   ```
+
+3. Authenticate with your HubSpot account:
    ```bash
    hs auth
    ```
 
-3. Navigate to a specific project directory and install dependencies:
+4. Navigate to a specific project directory and install dependencies:
    ```bash
    cd record-audit-tracker
    npm install
    ```
 
-4. Upload the project to HubSpot:
+5. Upload the project to HubSpot:
    ```bash
    hs upload
    ```
+
+## Configuration
+
+The `hubspot.config.yml.example` file shows the structure needed for your HubSpot configuration. You'll need to:
+
+1. Replace `YOUR_PORTAL_ID` with your HubSpot portal ID
+2. Replace `YOUR_ACCESS_TOKEN` with your HubSpot access token
+3. Replace `YOUR_PERSONAL_ACCESS_KEY` with your HubSpot personal access key
+4. Replace `YOUR_PARENT_ACCOUNT_ID` with your parent account ID (if applicable)
+
+**Important**: Never commit your actual `hubspot.config.yml` file to version control as it contains sensitive credentials.
 
 ## Development
 
@@ -41,7 +61,7 @@ Each project contains its own configuration and dependencies. See individual pro
 
 - `record-audit-tracker/` - Record audit tracking custom card
 - `test-project/` - Sample HubSpot custom UI project
-- `hubspot.config.yml` - Global HubSpot configuration
+- `hubspot.config.yml.example` - Example HubSpot configuration template
 
 ## Contributing
 
